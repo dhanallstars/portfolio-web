@@ -131,9 +131,17 @@
                         <div class="resume-sidebar d-flex flex-column position-sticky">
                             <div class="theiaStickySidebar">
                                 <div class="resume-info round50 d-flex flex-column position-relative w-100">
-                                    <div class="user-img round40 overflow-hidden position-relative w-100"><img
-                                            class="img-fluid w-100" src="assets/images/resources/elaalvina.jpg"
-                                            alt="User Image" loading="lazy"></div>
+                                    <div class="user-img round40 overflow-hidden position-relative w-100" 
+                                        oncontextmenu="return false;" onmousedown="return false;" onselectstart="return false;">
+                                        <img class="img-fluid w-100" src="assets/images/resources/elaalvina.jpg" 
+                                            alt="User Image" loading="lazy" ondragstart="return false;" />
+                                    </div>
+                                    <style>
+                                        img {
+                                            pointer-events: none; /* Mencegah interaksi langsung dengan gambar */
+                                            user-select: none;     /* Mencegah pemilihan teks/gambar */
+                                        }
+                                    </style>
                                     <!-- User Image -->
                                     <div class="user-info d-flex flex-column align-items-start w-100">
                                         <span>🧕 Ela Alvina Roza, S.Ak.</span>
