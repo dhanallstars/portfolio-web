@@ -101,6 +101,16 @@
 <body class="bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light"
     style="background-image: url(assets/images/pattern-bg.png);">
     <main>
+        <audio id="backgroundMusic" autoplay loop>
+            <source src="assets/audio1.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            // Mengatur volume audio ke 60%
+            var audio = document.getElementById('backgroundMusic');
+            audio.addEventListener('canplaythrough', function() {
+                audio.volume = 0.5; // Nilai antara 0.0 (diam) dan 1.0 (suara maksimum)
+        });
+        </script>
         <div class="page-loader">
             <div class="loader">
                 <div class='loader-style-1 panelLoad'>
